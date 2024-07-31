@@ -1,9 +1,681 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "books": [
+    { "id": 1, "title": "Carrie", "year": 1974, "rating": 4.5 },
+    { "id": 2, "title": "Salem's Lot", "year": 1975, "rating": 4.3 },
+    { "id": 3, "title": "The Shining", "year": 1977, "rating": 4.8 },
+    { "id": 4, "title": "The Stand", "year": 1978, "rating": 4.7 },
+    { "id": 5, "title": "The Dead Zone", "year": 1979, "rating": 4.2 },
+    { "id": 6, "title": "Firestarter", "year": 1980, "rating": 4.1 },
+    { "id": 7, "title": "Cujo", "year": 1981, "rating": 3.9 },
+    {
+      "id": 8,
+      "title": "The Dark Tower: The Gunslinger",
+      "year": 1982,
+      "rating": 4.4
+    },
+    { "id": 9, "title": "Christine", "year": 1983, "rating": 4.0 },
+    { "id": 10, "title": "Pet Sematary", "year": 1983, "rating": 4.5 },
+    { "id": 11, "title": "It", "year": 1986, "rating": 4.6 },
+    { "id": 12, "title": "Misery", "year": 1987, "rating": 4.5 },
+    { "id": 13, "title": "The Tommyknockers", "year": 1987, "rating": 3.8 },
+    { "id": 14, "title": "The Dark Half", "year": 1989, "rating": 4.0 },
+    { "id": 15, "title": "Needful Things", "year": 1991, "rating": 4.2 },
+    { "id": 16, "title": "Gerald's Game", "year": 1992, "rating": 3.9 },
+    { "id": 17, "title": "Dolores Claiborne", "year": 1992, "rating": 4.3 },
+    { "id": 18, "title": "Insomnia", "year": 1994, "rating": 4.0 },
+    { "id": 19, "title": "Rose Madder", "year": 1995, "rating": 3.7 },
+    { "id": 20, "title": "Desperation", "year": 1996, "rating": 4.1 },
+    { "id": 21, "title": "Bag of Bones", "year": 1998, "rating": 4.2 },
+    {
+      "id": 22,
+      "title": "The Girl Who Loved Tom Gordon",
+      "year": 1999,
+      "rating": 4.0
+    },
+    { "id": 23, "title": "Dreamcatcher", "year": 2001, "rating": 3.6 },
+    { "id": 24, "title": "Black House", "year": 2001, "rating": 4.1 },
+    { "id": 25, "title": "From a Buick 8", "year": 2002, "rating": 3.8 },
+    {
+      "id": 26,
+      "title": "The Dark Tower: Wolves of the Calla",
+      "year": 2003,
+      "rating": 4.3
+    },
+    {
+      "id": 27,
+      "title": "The Dark Tower: Song of Susannah",
+      "year": 2004,
+      "rating": 4.1
+    },
+    {
+      "id": 28,
+      "title": "The Dark Tower: The Dark Tower",
+      "year": 2004,
+      "rating": 4.5
+    },
+    { "id": 29, "title": "Cell", "year": 2006, "rating": 3.7 },
+    { "id": 30, "title": "Lisey's Story", "year": 2006, "rating": 4.0 }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "movies": [
+    {
+      "id": 1,
+      "title": "Goodfellas",
+      "year": 1990,
+      "director": "Martin Scorsese",
+      "genre": "Crime"
+    },
+    {
+      "id": 2,
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "director": "Jonathan Demme",
+      "genre": "Thriller"
+    },
+    {
+      "id": 3,
+      "title": "Jurassic Park",
+      "year": 1993,
+      "director": "Steven Spielberg",
+      "genre": "Adventure"
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "director": "Quentin Tarantino",
+      "genre": "Crime"
+    },
+    {
+      "id": 5,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "director": "Frank Darabont",
+      "genre": "Drama"
+    },
+    {
+      "id": 6,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "director": "Robert Zemeckis",
+      "genre": "Drama"
+    },
+    {
+      "id": 7,
+      "title": "Toy Story",
+      "year": 1995,
+      "director": "John Lasseter",
+      "genre": "Animation"
+    },
+    {
+      "id": 8,
+      "title": "Se7en",
+      "year": 1995,
+      "director": "David Fincher",
+      "genre": "Thriller"
+    },
+    {
+      "id": 9,
+      "title": "Braveheart",
+      "year": 1995,
+      "director": "Mel Gibson",
+      "genre": "Historical Drama"
+    },
+    {
+      "id": 10,
+      "title": "Heat",
+      "year": 1995,
+      "director": "Michael Mann",
+      "genre": "Crime"
+    },
+    {
+      "id": 11,
+      "title": "Fargo",
+      "year": 1996,
+      "director": "Joel Coen",
+      "genre": "Crime"
+    },
+    {
+      "id": 12,
+      "title": "The English Patient",
+      "year": 1996,
+      "director": "Anthony Minghella",
+      "genre": "Romance"
+    },
+    {
+      "id": 13,
+      "title": "Titanic",
+      "year": 1997,
+      "director": "James Cameron",
+      "genre": "Romance"
+    },
+    {
+      "id": 14,
+      "title": "L.A. Confidential",
+      "year": 1997,
+      "director": "Curtis Hanson",
+      "genre": "Crime"
+    },
+    {
+      "id": 15,
+      "title": "Saving Private Ryan",
+      "year": 1998,
+      "director": "Steven Spielberg",
+      "genre": "War"
+    },
+    {
+      "id": 16,
+      "title": "The Big Lebowski",
+      "year": 1998,
+      "director": "Joel Coen",
+      "genre": "Comedy"
+    },
+    {
+      "id": 17,
+      "title": "Fight Club",
+      "year": 1999,
+      "director": "David Fincher",
+      "genre": "Drama"
+    },
+    {
+      "id": 18,
+      "title": "The Matrix",
+      "year": 1999,
+      "director": "The Wachowskis",
+      "genre": "Sci-Fi"
+    },
+    {
+      "id": 19,
+      "title": "American Beauty",
+      "year": 1999,
+      "director": "Sam Mendes",
+      "genre": "Drama"
+    },
+    {
+      "id": 20,
+      "title": "The Sixth Sense",
+      "year": 1999,
+      "director": "M. Night Shyamalan",
+      "genre": "Thriller"
+    },
+    {
+      "id": 21,
+      "title": "The Lion King",
+      "year": 1994,
+      "director": "Roger Allers",
+      "genre": "Animation"
+    },
+    {
+      "id": 22,
+      "title": "Schindler's List",
+      "year": 1993,
+      "director": "Steven Spielberg",
+      "genre": "Historical Drama"
+    },
+    {
+      "id": 23,
+      "title": "The Green Mile",
+      "year": 1999,
+      "director": "Frank Darabont",
+      "genre": "Drama"
+    },
+    {
+      "id": 24,
+      "title": "Beauty and the Beast",
+      "year": 1991,
+      "director": "Gary Trousdale",
+      "genre": "Animation"
+    },
+    {
+      "id": 25,
+      "title": "Aladdin",
+      "year": 1992,
+      "director": "Ron Clements",
+      "genre": "Animation"
+    },
+    {
+      "id": 26,
+      "title": "The Truman Show",
+      "year": 1998,
+      "director": "Peter Weir",
+      "genre": "Drama"
+    },
+    {
+      "id": 27,
+      "title": "Gladiator",
+      "year": 2000,
+      "director": "Ridley Scott",
+      "genre": "Historical Drama"
+    },
+    {
+      "id": 28,
+      "title": "Scream",
+      "year": 1996,
+      "director": "Wes Craven",
+      "genre": "Horror"
+    },
+    {
+      "id": 29,
+      "title": "The Blair Witch Project",
+      "year": 1999,
+      "director": "Daniel Myrick",
+      "genre": "Horror"
+    },
+    {
+      "id": 30,
+      "title": "Men in Black",
+      "year": 1997,
+      "director": "Barry Sonnenfeld",
+      "genre": "Sci-Fi"
+    }
   ],
-  "profile": { "name": "typicode" }
+  "countries": [
+    {
+      "id": 1,
+      "name": { "official": "Albania", "iso": "AL" },
+      "capital": "Tirana",
+      "flag": "🇦🇱",
+      "population": 2877797,
+      "area": 28748
+    },
+    {
+      "id": 2,
+      "name": { "official": "Andorra", "iso": "AD" },
+      "capital": "Andorra la Vella",
+      "flag": "🇦🇩",
+      "population": 77265,
+      "area": 468
+    },
+    {
+      "id": 3,
+      "name": { "official": "Armenia", "iso": "AM" },
+      "capital": "Yerevan",
+      "flag": "🇦🇲",
+      "population": 2963243,
+      "area": 29743
+    },
+    {
+      "id": 4,
+      "name": { "official": "Austria", "iso": "AT" },
+      "capital": "Vienna",
+      "flag": "🇦🇹",
+      "population": 8917205,
+      "area": 83871
+    },
+    {
+      "id": 5,
+      "name": { "official": "Azerbaijan", "iso": "AZ" },
+      "capital": "Baku",
+      "flag": "🇦🇿",
+      "population": 10023318,
+      "area": 86600
+    },
+    {
+      "id": 6,
+      "name": { "official": "Belarus", "iso": "BY" },
+      "capital": "Minsk",
+      "flag": "🇧🇾",
+      "population": 9408400,
+      "area": 207600
+    },
+    {
+      "id": 7,
+      "name": { "official": "Belgium", "iso": "BE" },
+      "capital": "Brussels",
+      "flag": "🇧🇪",
+      "population": 11589623,
+      "area": 30528
+    },
+    {
+      "id": 8,
+      "name": { "official": "Bosnia and Herzegovina", "iso": "BA" },
+      "capital": "Sarajevo",
+      "flag": "🇧🇦",
+      "population": 3280819,
+      "area": 51129
+    },
+    {
+      "id": 9,
+      "name": { "official": "Bulgaria", "iso": "BG" },
+      "capital": "Sofia",
+      "flag": "🇧🇬",
+      "population": 6951482,
+      "area": 110993
+    },
+    {
+      "id": 10,
+      "name": { "official": "Croatia", "iso": "HR" },
+      "capital": "Zagreb",
+      "flag": "🇭🇷",
+      "population": 4076246,
+      "area": 56594
+    },
+    {
+      "id": 11,
+      "name": { "official": "Cyprus", "iso": "CY" },
+      "capital": "Nicosia",
+      "flag": "🇨🇾",
+      "population": 1207359,
+      "area": 9251
+    },
+    {
+      "id": 12,
+      "name": { "official": "Czech Republic", "iso": "CZ" },
+      "capital": "Prague",
+      "flag": "🇨🇿",
+      "population": 10701777,
+      "area": 78866
+    },
+    {
+      "id": 13,
+      "name": { "official": "Denmark", "iso": "DK" },
+      "capital": "Copenhagen",
+      "flag": "🇩🇰",
+      "population": 5822763,
+      "area": 43094
+    },
+    {
+      "id": 14,
+      "name": { "official": "Estonia", "iso": "EE" },
+      "capital": "Tallinn",
+      "flag": "🇪🇪",
+      "population": 1328976,
+      "area": 45227
+    },
+    {
+      "id": 15,
+      "name": { "official": "Finland", "iso": "FI" },
+      "capital": "Helsinki",
+      "flag": "🇫🇮",
+      "population": 5530719,
+      "area": 338424
+    },
+    {
+      "id": 16,
+      "name": { "official": "France", "iso": "FR" },
+      "capital": "Paris",
+      "flag": "🇫🇷",
+      "population": 67399000,
+      "area": 551695
+    },
+    {
+      "id": 17,
+      "name": { "official": "Georgia", "iso": "GE" },
+      "capital": "Tbilisi",
+      "flag": "🇬🇪",
+      "population": 3723464,
+      "area": 69700
+    },
+    {
+      "id": 18,
+      "name": { "official": "Germany", "iso": "DE" },
+      "capital": "Berlin",
+      "flag": "🇩🇪",
+      "population": 83166711,
+      "area": 357386
+    },
+    {
+      "id": 19,
+      "name": { "official": "Greece", "iso": "GR" },
+      "capital": "Athens",
+      "flag": "🇬🇷",
+      "population": 10724599,
+      "area": 131957
+    },
+    {
+      "id": 20,
+      "name": { "official": "Hungary", "iso": "HU" },
+      "capital": "Budapest",
+      "flag": "🇭🇺",
+      "population": 9750000,
+      "area": 93030
+    },
+    {
+      "id": 21,
+      "name": { "official": "Iceland", "iso": "IS" },
+      "capital": "Reykjavik",
+      "flag": "🇮🇸",
+      "population": 366130,
+      "area": 103000
+    },
+    {
+      "id": 22,
+      "name": { "official": "Ireland", "iso": "IE" },
+      "capital": "Dublin",
+      "flag": "🇮🇪",
+      "population": 4994724,
+      "area": 70273
+    },
+    {
+      "id": 23,
+      "name": { "official": "Italy", "iso": "IT" },
+      "capital": "Rome",
+      "flag": "🇮🇹",
+      "population": 60243406,
+      "area": 301340
+    },
+    {
+      "id": 24,
+      "name": { "official": "Kazakhstan", "iso": "KZ" },
+      "capital": "Nur-Sultan",
+      "flag": "🇰🇿",
+      "population": 18754440,
+      "area": 2724900
+    },
+    {
+      "id": 25,
+      "name": { "official": "Kosovo", "iso": "XK" },
+      "capital": "Pristina",
+      "flag": "🇽🇰",
+      "population": 1831000,
+      "area": 10887
+    },
+    {
+      "id": 26,
+      "name": { "official": "Latvia", "iso": "LV" },
+      "capital": "Riga",
+      "flag": "🇱🇻",
+      "population": 1907675,
+      "area": 64559
+    },
+    {
+      "id": 27,
+      "name": { "official": "Liechtenstein", "iso": "LI" },
+      "capital": "Vaduz",
+      "flag": "🇱🇮",
+      "population": 38749,
+      "area": 160
+    },
+    {
+      "id": 28,
+      "name": { "official": "Lithuania", "iso": "LT" },
+      "capital": "Vilnius",
+      "flag": "🇱🇹",
+      "population": 2794137,
+      "area": 65300
+    },
+    {
+      "id": 29,
+      "name": { "official": "Luxembourg", "iso": "LU" },
+      "capital": "Luxembourg",
+      "flag": "🇱🇺",
+      "population": 634814,
+      "area": 2586
+    },
+    {
+      "id": 30,
+      "name": { "official": "Malta", "iso": "MT" },
+      "capital": "Valletta",
+      "flag": "🇲🇹",
+      "population": 514564,
+      "area": 316
+    },
+    {
+      "id": 31,
+      "name": { "official": "Moldova", "iso": "MD" },
+      "capital": "Chișinău",
+      "flag": "🇲🇩",
+      "population": 2657637,
+      "area": 33843
+    },
+    {
+      "id": 32,
+      "name": { "official": "Monaco", "iso": "MC" },
+      "capital": "Monaco",
+      "flag": "🇲🇨",
+      "population": 38300,
+      "area": 2
+    },
+    {
+      "id": 33,
+      "name": { "official": "Montenegro", "iso": "ME" },
+      "capital": "Podgorica",
+      "flag": "🇲🇪",
+      "population": 622359,
+      "area": 13812
+    },
+    {
+      "id": 34,
+      "name": { "official": "Netherlands", "iso": "NL" },
+      "capital": "Amsterdam",
+      "flag": "🇳🇱",
+      "population": 17441139,
+      "area": 41543
+    },
+    {
+      "id": 35,
+      "name": { "official": "North Macedonia", "iso": "MK" },
+      "capital": "Skopje",
+      "flag": "🇲🇰",
+      "population": 2077132,
+      "area": 25713
+    },
+    {
+      "id": 36,
+      "name": { "official": "Norway", "iso": "NO" },
+      "capital": "Oslo",
+      "flag": "🇳🇴",
+      "population": 5391369,
+      "area": 323802
+    },
+    {
+      "id": 37,
+      "name": { "official": "Poland", "iso": "PL" },
+      "capital": "Warsaw",
+      "flag": "🇵🇱",
+      "population": 38386000,
+      "area": 312696
+    },
+    {
+      "id": 38,
+      "name": { "official": "Portugal", "iso": "PT" },
+      "capital": "Lisbon",
+      "flag": "🇵🇹",
+      "population": 10295909,
+      "area": 92212
+    },
+    {
+      "id": 39,
+      "name": { "official": "Romania", "iso": "RO" },
+      "capital": "Bucharest",
+      "flag": "🇷🇴",
+      "population": 19237691,
+      "area": 238397
+    },
+    {
+      "id": 40,
+      "name": { "official": "Russia", "iso": "RU" },
+      "capital": "Moscow",
+      "flag": "🇷🇺",
+      "population": 144104080,
+      "area": 17098242
+    },
+    {
+      "id": 41,
+      "name": { "official": "San Marino", "iso": "SM" },
+      "capital": "San Marino",
+      "flag": "🇸🇲",
+      "population": 33931,
+      "area": 61
+    },
+    {
+      "id": 42,
+      "name": { "official": "Serbia", "iso": "RS" },
+      "capital": "Belgrade",
+      "flag": "🇷🇸",
+      "population": 6901188,
+      "area": 88361
+    },
+    {
+      "id": 43,
+      "name": { "official": "Slovakia", "iso": "SK" },
+      "capital": "Bratislava",
+      "flag": "🇸🇰",
+      "population": 5456362,
+      "area": 49037
+    },
+    {
+      "id": 44,
+      "name": { "official": "Slovenia", "iso": "SI" },
+      "capital": "Ljubljana",
+      "flag": "🇸🇮",
+      "population": 2100126,
+      "area": 20273
+    },
+    {
+      "id": 45,
+      "name": { "official": "Spain", "iso": "ES" },
+      "capital": "Madrid",
+      "flag": "🇪🇸",
+      "population": 47351567,
+      "area": 505992
+    },
+    {
+      "id": 46,
+      "name": { "official": "Sweden", "iso": "SE" },
+      "capital": "Stockholm",
+      "flag": "🇸🇪",
+      "population": 10353442,
+      "area": 450295
+    },
+    {
+      "id": 47,
+      "name": { "official": "Switzerland", "iso": "CH" },
+      "capital": "Bern",
+      "flag": "🇨🇭",
+      "population": 8632703,
+      "area": 41284
+    },
+    {
+      "id": 48,
+      "name": { "official": "Turkey", "iso": "TR" },
+      "capital": "Ankara",
+      "flag": "🇹🇷",
+      "population": 84339067,
+      "area": 783356
+    },
+    {
+      "id": 49,
+      "name": { "official": "Ukraine", "iso": "UA" },
+      "capital": "Kyiv",
+      "flag": "🇺🇦",
+      "population": 41732779,
+      "area": 603500
+    },
+    {
+      "id": 50,
+      "name": { "official": "United Kingdom", "iso": "GB" },
+      "capital": "London",
+      "flag": "🇬🇧",
+      "population": 67215293,
+      "area": 242495
+    },
+    {
+      "id": 51,
+      "name": { "official": "Vatican City", "iso": "VA" },
+      "capital": "Vatican City",
+      "flag": "🇻🇦",
+      "population": 800,
+      "area": 0.49
+    }
+  ]
 }
